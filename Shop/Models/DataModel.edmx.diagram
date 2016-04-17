@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="8d1b729fc5d041da87b38f42a6921ba7" Name="关系图1">
+        <EntityTypeShape EntityType="ShopModel.Brand" Width="1.5" PointX="3" PointY="5.75" />
+        <EntityTypeShape EntityType="ShopModel.ProductType" Width="1.5" PointX="5.75" PointY="5.75" />
+        <EntityTypeShape EntityType="ShopModel.ProductTypeF" Width="1.5" PointX="0.75" PointY="1.75" />
+        <EntityTypeShape EntityType="ShopModel.ProductTypeS" Width="1.5" PointX="3" PointY="1.5" />
+        <AssociationConnector Association="ShopModel.FK_ProductTypeS_To_ProductTypeF" />
+        <EntityTypeShape EntityType="ShopModel.ProductImg" Width="1.5" PointX="2.2771394412392469" PointY="12.122705360931672" />
+        <EntityTypeShape EntityType="ShopModel.Products" Width="1.5" PointX="11.527007097158119" PointY="25.018519636717865" />
+        <AssociationConnector Association="ShopModel.FK_Products_Brand" />
+        <AssociationConnector Association="ShopModel.FK_ProductImg_Products" />
+        <AssociationConnector Association="ShopModel.FK_Products_ProductTypeS" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
